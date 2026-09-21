@@ -8,7 +8,7 @@ A redundant, highly available enterprise campus network designed and simulated i
 
 ### Key Features
 * **Core Redundancy**: Dual Cisco 3650 Core Switches (`HQ-CORE-01` & `HQ-CORE-02`) running **HSRP** for default gateway redundancy and **LACP (EtherChannel)** for trunking.
-* **VLAN Segmentation**: Dedicated VLANs (`VLAN 10` for Sales, `VLAN 20` for HR) configured on `Switch3`.
+* **VLAN Segmentation**: Dedicated VLANs (`VLAN 10` for Management, `VLAN 20` for Corporate Data, `VLAN 30` for Voice, and `VLAN 99` for Guest) configured on access switches (`HQ-ACCESS-01`).
 * **Routed Core-to-Edge**: Subnetted point-to-point Layer 3 links routing network traffic to the edge router (`HQ-RTR`).
 
 ---
